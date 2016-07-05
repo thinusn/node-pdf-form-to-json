@@ -1,0 +1,31 @@
+{
+  "name": "node-pdf-form-to-json",
+  "version": "0.0.1",
+  "description": "Extract fillable pdf form values to json",
+  "author": {
+    "name": "Thinus Naude"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "pdf",
+    "fillable pdf",
+    "json",
+    "form",
+    "extract form data"
+  ],
+  "dependencies": {
+    "exec": "^0.2.1",
+    "pdffiller": "^0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/thinusn/node-pdf-form-to-json.git"
+  },
+  "bugs": {
+    "url": "http://github.com/thinusn/node-pdf-form-to-json/issues"
+  },
+  "license": "MIT"
+}
