@@ -30,45 +30,45 @@ nodePdfFormToJson.getDataFieldsSerialized('path/to/my-pdf.pdf', function(data){
 
 ## Example form and what gets returned
 ### Form 1
- ##### Layout of pdf
- - text box with name of `userFirstName` value `Harry`
- - text box with name of `userLastName` value `Potter`
- ##### Returns
-  ###### `getDataFields` will return 
-  ```
-  {
-    userFirstName : 'Harry',
-    userLastName : 'Potter'
-  }
-  ```
-  ###### `getDataFieldsSerialized` will return 
-  ```
-  {
-    userFirstName : 'Harry',
-    userLastName : 'Potter'
-  }
-  ```
+##### Layout of pdf
+text box with name of `userFirstName` value `Harry`
+text box with name of `userLastName` value `Potter`
+##### Returns
+###### `getDataFields` will return 
+```
+{
+  userFirstName : 'Harry',
+  userLastName : 'Potter'
+}
+```
+###### `getDataFieldsSerialized` will return 
+```
+{
+  userFirstName : 'Harry',
+  userLastName : 'Potter'
+}
+```
 ### Form Example 2
- ##### Layout of pdf
- - text box with name of `user[firstName]` value `Harry`
- - text box with name of `user[lastName]` value `Potter`
- ##### Returns
-   ###### `getDataFields` will return 
-   ```
-   {
-     'user[firstName]' : 'Harry',
-     'user[lastName]' : 'Potter'
-   }
-   ```
-   ###### `getDataFieldsSerialized` will return 
-   ```
-   {
-     user: {
-       firstName : 'Harry',
-       lastName : 'Potter'
-     }
-   }
-   ```
+##### Layout of pdf
+text box with name of `user[firstName]` value `Harry`
+text box with name of `user[lastName]` value `Potter`
+##### Returns
+###### `getDataFields` will return 
+```
+{
+ 'user[firstName]' : 'Harry',
+ 'user[lastName]' : 'Potter'
+}
+```
+###### `getDataFieldsSerialized` will return 
+```
+{
+ user: {
+   firstName : 'Harry',
+   lastName : 'Potter'
+ }
+}
+```
 
 
 
